@@ -4,12 +4,12 @@ on: push
 
 jobs:
   echo-hello:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Say Hello
         run: echo "Hello Panda"
   echo-buy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Failed step
         run: |

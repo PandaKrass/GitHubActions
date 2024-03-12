@@ -1,0 +1,19 @@
+name: 01 - Building Block
+
+on: push
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello Panda"
+  echo-buy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Failed step
+        run: |
+          echo "failing!"
+          exit 1
+      - name: Say Buy
+        run: echo "Sayoonara"

@@ -11,9 +11,9 @@ jobs:
   echo-buy:
     runs-on: self-hosted
     steps:
-      - name: Failed step
+      - name: Fixedd Failed step
         run: |
-          echo "failing!"
-          exit 1
-      - name: Say Buy
+          echo "it's fine!"
+          exit 0
+      - name: Say Bye
         run: echo "Sayoonara"
